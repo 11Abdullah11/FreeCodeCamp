@@ -1,0 +1,84 @@
+#body{
+	background-color: #eee;
+}
+
+#header{
+  	position:fixed;
+	padding:1.5%;
+	background-color:#eff;
+	border-color: #548253;
+	font-family: 'Source Sans Pro', sans-serif;
+	z-index: 100;
+}
+@media screen and (max-height: 600px){
+	#header{
+		font-size:12px;
+	}
+	iframe{
+		width:70%;
+	}
+
+}
+@media screen and (min-height: 600px){
+	#header{
+		font-size:18px;
+	}
+}
+
+.content{
+	padding-top:100px;
+}
+.head{
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+}
+img{
+	width:100%;
+}
+.nav-link{
+margin-right:3%;
+}
+input{
+	border-radius: 2px;
+	border-width: 1px;
+}
+.feature{
+	margin:5%;
+}
+i{
+	color:orange;
+}
+#hiworks{
+	margin:2%;
+}
+.head1{
+	background-color: #d8d8d8;
+	display: block;
+	padding:5%;
+}
+.price{
+	margin:6%;
+	display: block;
+	font-weight: bold;
+}
+
+.myrow{
+	width:100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.mycol1{
+	width:18%;
+	display:inline-block;
+}
+
+.mycol3{
+	width:20%;
+	display:inline-block;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding-bottom: 2%;
+	margin:1%;
+}

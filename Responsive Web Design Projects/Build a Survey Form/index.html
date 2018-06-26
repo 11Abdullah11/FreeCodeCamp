@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet"  href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand|Encode+Sans+Semi+Expanded" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</head>
+<body>
+	<h1 id="title" class="text-center">Survey Form</h1>
+		<div id="content" class="text-center well">
+		<p id="description">Let us know how we can improve freeCodeCamp</p>
+		<form class="text-left" id="survey-form" method="POST">
+			<div class="row">
+				<div class="col-sm-6"><label  id="name-label" for="name"> Name :</label></div>
+				<div class="col-sm-6"><input placeholder="Enter your name" id="name" type="text" name="name" style="width: 80%" required></div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-6"><label  id="email-label" for="email"> Email :</label></div>
+				<div class="col-sm-6"><input placeholder="Enter your email" id="email" type="email" name="email" style="width: 80%" required></div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-6"><label  id="number-label" for="number" > Age :</label></div>
+				<div class="col-sm-6"><input placeholder="Age" id="number" type="number" name="age" min="0" max="100" style="width: 80%" required></div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-6"><label  id="occupation-label" >Which option best describes your current role?</label></div>
+				<div class="col-sm-6">
+					<select id="dropdown" name="occupation" style="width: 40%">
+					  <option disabled selected>Select an option</option>	
+					  <option value="student">Student</option>
+					  <option value="job">Full time Job</option>
+					  <option value="learner">Full time learner</option>
+					  <option value="pnts">Prefer Not to Say</option>
+					  <option value="other">Other</option>
+					</select>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-6"><label  id="textarea-label" >How likely is that you would recommend freeCodeCamp to a friend?</label></div>
+				<div class="col-sm-6">
+				  <input type="radio" name="grouped" value="def" required> Definite<br><br>
+				  <input type="radio" name="grouped" value="maybe"> Maybe<br><br>
+				  <input type="radio" name="grouped" value="nsure"> Not Sure  <br>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-6 "><label  id="liking-label" for="number" >What do you like most in FCC:</label></div>
+				<div class="col-sm-6">
+					<select name="liking" style="width: 40%">
+					  <option disabled selected>Select an option</option>					  
+					  <option value="challenges">Challenges</option>
+					  <option value="projects">Projects</option>
+					  <option value="community">Community</option>
+					  <option value="open">Open Source</option>
+					</select>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-6 "><label  id="liking-label"  >Things that should be improved in the future
+(Check all that apply):</label></div>
+				<div class="col-sm-6">
+				  <input type="checkbox" name="improve" value="fep" > Front-end Projects<br><br>
+				  <input type="checkbox" name="improve" value="bep"> Back-end Projects<br><br>
+				  <input type="checkbox" name="improve" value="datavis"> Data Visualization<br> <br> 
+				  <input type="checkbox" name="improve" value="challenges" > Challenges<br><br>
+				  <input type="checkbox" name="improve" value="osc"> Open source Community<br><br>
+				  <input type="checkbox" name="improve" value="glitter"> Glitter help rooms<br>	<br>			
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-6"><label  id="textarea-label" >Any Comments or Suggestions?</label></div>
+				<div class="col-sm-6"><textarea name="message" rows="3" style="width: 70%" placeholder="Enter your comments here"></textarea></div>
+			</div>
+			<br>
+			
+			<div class="text-center">
+				<button id="submit" class="btn btn-default">Submit</button>
+			</div>
+
+
+			<br>		
+		</form>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+@media  screen and (max-width: 800px) {
+	#navbar{	
+		float:none;
+	}
+	#main-doc{
+		float:none;
+	}
+}
+@media  screen and (min-width: 800px) {
+	#navbar{	
+		float:left;
+		position: fixed;
+		width:25%;
+		font-size: 18px;
+	}
+	#main-doc{
+		float:right;
+	}
+}
+
+#JS_Documentation{
+	padding:5%;
+	font-size: 26px;
+}
+#main-doc{
+	width:75%;
+}
+#links{
+	overflow-y: scroll;
+	height:100vh;
+	bottom:10px;
+	padding-bottom:80px;
+}
+.nav-link{
+	display: block;
+	color:black;
+	padding:4%;
+	border-bottom:2px solid black;
+}
+header{
+	font-family: 'Patua One', cursive;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top:2%;
+	margin-bottom: 2%;
+}
+p, li{
+	font-size:16px;
+	font-family: 'Inconsolata', monospace;
+
+}
+section{
+	margin:3%;
+}
